@@ -178,14 +178,17 @@
         }
 
         .portfolio-img {
-            background: #d9e2e8;
+            width: 100%;
             height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #2c7a64;
-            font-weight: bold;
-            font-size: 1.2rem;
+            overflow: hidden;
+            background: #d9e2e8;
+        }
+
+        .portfolio-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .portfolio-info {
@@ -251,33 +254,13 @@
             justify-content: center;
         }
 
-        .photo-placeholder {
+        .profile-img {
             width: 260px;
             height: 260px;
-            background: #eef3f7;
+            object-fit: cover;
             border-radius: 28px;
-            border: 3px dashed #2c7a64;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 1.2rem;
-            color: #2c7a64;
-            font-weight: 500;
-            transition: 0.2s;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.05);
-        }
-
-        .photo-placeholder span {
-            font-size: 3rem;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .photo-placeholder small {
-            font-size: 0.8rem;
-            color: #4a6a7c;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            border: 3px solid #fff;
         }
 
         /* Tabela de preços */
@@ -420,7 +403,7 @@
             .about-badges {
                 justify-content: center;
             }
-            .photo-placeholder {
+            .profile-img {
                 width: 220px;
                 height: 220px;
                 margin: 0 auto;
@@ -458,7 +441,7 @@
     </div>
 </section>
 
-<!-- Seção Sobre com espaço para foto ao lado (nome e foto) -->
+<!-- Seção Sobre com foto -->
 <section id="sobre">
     <div class="container">
         <h2 class="section-title">Quem sou</h2>
@@ -475,11 +458,7 @@
                 <a href="#contato" class="btn">📞 Conversar via WhatsApp</a>
             </div>
             <div class="about-photo">
-                <div class="photo-placeholder">
-                    <span>🖼️</span>
-                    Sua foto aqui
-                    <small>(adicione sua imagem)</small>
-                </div>
+                <img class="profile-img" src="Gemini_Generated_Image_e2r29ze2r29ze2r2d.png" alt="Foto de Anibal Joao Faduco Guilengue">
             </div>
         </div>
     </div>
@@ -502,31 +481,37 @@
         <h2 class="section-title">Trabalhos recentes</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <div class="portfolio-img">📸 Print: Empresa Alpha</div>
+                <div class="portfolio-img">
+                    <img src="primeira29_03_2026, 19_12_25.png" alt="Captura de tela do projeto 1">
+                </div>
                 <div class="portfolio-info">
-                    <span class="badge">Institucional</span>
-                    <h3>Alpha Consultoria</h3>
-                    <p>Site clean, formulário de contato, mapa interativo. +35% de contatos em 2 meses.</p>
+                    <span class="badge">Site Institucional</span>
+                    <h3>Projeto Alpha</h3>
+                    <p>Site moderno e responsivo para empresa de consultoria. Design clean e formulário de contato integrado.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img">📸 Print: Pizzaria Napoli</div>
+                <div class="portfolio-img">
+                    <img src="segunda29_03_2026, 19_16_06.png" alt="Captura de tela do projeto 2">
+                </div>
                 <div class="portfolio-info">
-                    <span class="badge">Cardápio digital</span>
+                    <span class="badge">Cardápio Digital</span>
                     <h3>Pizzaria Napoli</h3>
-                    <p>Catálogo com fotos, WhatsApp integrado, design noturno. Acesso fácil pelo celular.</p>
+                    <p>Catálogo online com fotos dos pratos, botão direto para WhatsApp e layout otimizado para celular.</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img">📸 Print: Studio Fit</div>
+                <div class="portfolio-img">
+                    <img src="terceira29_03_2026, 19_18_59.png" alt="Captura de tela do projeto 3">
+                </div>
                 <div class="portfolio-info">
-                    <span class="badge">Landing page</span>
+                    <span class="badge">Landing Page</span>
                     <h3>Studio Fit Academia</h3>
-                    <p>Página de captação de leads, formulário de avaliação gratuita, integração com e-mail.</p>
+                    <p>Página de captação de leads com formulário de avaliação gratuita e integração com e-mail marketing.</p>
                 </div>
             </div>
         </div>
-        <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">* Exemplos ilustrativos. Casos reais disponíveis sob consulta.</p>
+        <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">* Projetos reais desenvolvidos para clientes. Entre em contato para mais exemplos.</p>
     </div>
 </section>
 
@@ -582,7 +567,6 @@
     </div>
 </section>
 
-<!-- Seção de contato com WhatsApp atualizado -->
 <section id="contato">
     <div class="container">
         <h2 class="section-title">Vamos conversar?</h2>
